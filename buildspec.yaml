@@ -8,6 +8,7 @@ phases:
       # Install Angular CLI
       - node --version
       - npm install -g @angular/cli
+      - cat /etc/os-re*
       
   # pre_build:
   #   commands:
