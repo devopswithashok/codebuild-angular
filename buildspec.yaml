@@ -21,7 +21,7 @@ phases:
       - npm install
       # Build Angular app
       - ng build
-      - ls -l
+      - ls -l /dist
 
 # artifacts:
 #   files:
