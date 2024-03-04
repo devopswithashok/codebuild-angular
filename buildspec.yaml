@@ -20,7 +20,8 @@ phases:
       # Install project dependencies
       - npm install
       # Build Angular app
-      - ng build --prod
+      - ng build
+      - ls -l
 
 # artifacts:
 #   files:
