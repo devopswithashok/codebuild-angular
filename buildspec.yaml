@@ -21,10 +21,10 @@ phases:
       - npm install
       # Build Angular app
       - ng build
-      - ls -l /dist
+      - ls -l 
 
-# artifacts:
-#   files:
-#     # Specify the artifacts to be uploaded
-#     - /path/to/your/angular/app/dist/**/*
-#   discard-paths: yes
+artifacts:
+  files:
+    # Specify the artifacts to be uploaded
+    - '**/*'
+
