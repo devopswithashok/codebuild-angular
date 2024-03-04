@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      # Install Angular CLI
+      - node --version
+      - npm install -g @angular/cli
+      
+  pre_build:
+    commands:
+      # Navigate into your Angular project directory
+      - cd /path/to/your/angular/app
+      
+  build:
+    commands:
+      # Install project dependencies
+      - npm install
+      # Build Angular app
+      - ng build --prod
+
+artifacts:
+  files:
+    # Specify the artifacts to be uploaded
+    - /path/to/your/angular/app/dist/**/*
+  discard-paths: yes
