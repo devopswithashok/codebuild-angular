@@ -8,7 +8,6 @@ phases:
       # Install Angular CLI
       - node --version
       - npm install -g @angular/cli
-      - cat /etc/os-re*
       
   # pre_build:
   #   commands:
@@ -21,8 +20,6 @@ phases:
       - npm install
       # Build Angular app
       - ng build
-      - ls -l 
-
 artifacts:
   files:
     # Specify the artifacts to be uploaded
